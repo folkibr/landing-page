@@ -149,7 +149,7 @@ footer .section-container {
   #texts-container {
     align-items: center;
   }
-  
+
   .benefits {
     flex-direction: column;
     margin-bottom: 0;
@@ -174,7 +174,7 @@ footer .section-container {
 
   .footer-option {
     margin-bottom: 32px;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   .download-buttons {
