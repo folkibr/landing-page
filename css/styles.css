@@ -40,7 +40,7 @@ header {
   width: 100%;
 }
 
-#container {
+.container {
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ header {
   align-items: center;
 }
 
-#texts-container {
+.texts-container {
   display: flex;
   flex-direction: column;
 }
@@ -130,7 +130,7 @@ h2 {
     position: relative;
   }
 
-  #container {
+  .container {
     align-items: unset;
     align-items: center;
     justify-content: center;
