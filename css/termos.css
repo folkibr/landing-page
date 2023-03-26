@@ -1,0 +1,45 @@
+:root {
+  --darker-green: #22712E;
+  --green: #2F9E41;
+  --red: #D40000;
+  --dark-red: #B10F0F;
+  --gray: #868686;
+  --dark-gray: #424242;
+  --darker-gray: #282828;
+  --shadow: 1px 1px 20px 0px rgba(0,0,0, 0.2);
+}
+
+html, body {
+  margin: 12px;
+  width: calc(100% - 24px);
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--green);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#start-container {
+  width: 95%;
+  max-width: 1280px;
+  height: calc(100% - 26px);
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+body div {
+  max-width: 1080px;
+}
+
+p {
+  color: var(--darker-gray);
+}
