@@ -104,6 +104,7 @@
     e.preventDefault();
     const data = new FormData(form);
     const action = e.target.action;
+    if(data.get('Email').indexOf('usp.br') === -1) return alert('Insira seu email USP!')
     button.value = 'Enviando..'
     fetch(action, {
       method: 'POST',
