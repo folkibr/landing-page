@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head> 
-    <title>Folki - A Comunicação Escolar para Você</title>
+    <title>Folki - A Sua Organização na USP</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,36 +22,36 @@
       content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no"
     />
 
-    <meta itemprop="name" content="Folki - A Comunicação Escolar para Você" />
+    <meta itemprop="name" content="Folki - A Sua Organização na USP" />
     <meta
       name="description"
-      content="O Folki é o aplicativo para centralizar todo o seu universo escolar em um lugar só. Atividades, notícias, eventos, tudo. Comece a usar gratuitamente em um clique."
+      content="O Folki é o aplicativo para organizar suas atividades, faltas, aulas e notas. Tudo em um só lugar."
     />
     <meta name="language" content="PT" />
-    <meta name="author" content="Yuri Faria, yuri@folki.com.br" />
+    <meta name="author" content="Yuri Faria, yfaria@usp.br" />
     <meta name="url" content="https://folki.com.br/" />
 
     <meta
       property="og:title"
-      content="Folki - A Comunicação Escolar para Você"
+      content="Folki - A Sua Organização na USP"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://folki.com.br/" />
     <meta
       property="og:description"
-      content="O Folki é o aplicativo para centralizar todo o seu universo escolar em um lugar só. Atividades, notícias, eventos, tudo. Comece a usar gratuitamente em um clique."
+      content="O Folki é o aplicativo para organizar suas atividades, faltas, aulas e notas. Tudo em um só lugar."
     />
-    <meta property="og:email" content="yuri@folki.com.br" />
+    <meta property="og:email" content="yfaria@usp.br" />
     <meta property="og:image" content="img/ogtt.png" />
 
     <meta property="twitter:image" content="img/ogtt.png" />
     <meta
       property="twitter:title"
-      content="Folki - A Comunicação Escolar para Você"
+      content="Folki - A Sua Organização na USP"
     />
     <meta
       property="twitter:description"
-      content="O Folki é o aplicativo para centralizar todo o seu universo escolar em um lugar só. Atividades, notícias, eventos, tudo. Comece a usar gratuitamente em um clique."
+      content="O Folki é o aplicativo para organizar suas atividades, faltas, aulas e notas. Tudo em um só lugar."
     />
     <meta name="theme-color" content="#000" />
 
@@ -75,24 +75,45 @@
       <div class="section-container" id="first">
         <header>
           <img src="img/logo.png" />
-          <a href="para-escolas">Para Escolas</a>
         </header>
         <div class="container">
           <div class="texts-container">
-            <h1>A comunicação para você</h1>
+            <img src="img/prints.png" class="prints-mobile" />
+            <h1>O Lugar para se Organizar na USP</h1>
             <h2>
-              O Folki é o aplicativo para centralizar todo o seu universo
-              escolar em um lugar só. Atividades, notícias, eventos, tudo.
-              Comece a usar gratuitamente em um clique.
+              Organize suas atividades, faltas, aulas e notas. Tudo em um só lugar.
             </h2>
-            <div class="download-buttons">
-              <a href="https://play.google.com/store/apps/details?id=com.br.folki"><img src="img/google-play.png" /></a>
-              <!-- <a href="#"><img src="img/app-store.png" /></a> -->
+            <div class="form">
+              <p>Faça sua pré-inscrição para receber um convite antecipado</p>
+              <form action="https://script.google.com/macros/s/AKfycbywUcS7ZMSf8283k1ew4PomNnJVDEHyAzEfybUmJGgC2IRm4V5mLvaNuhJdu-TwxUx4-A/exec" method="POST">
+                <input type="email" name="Email" placeholder="Seu email @usp.br" />
+                <input type="submit" value="Enviar" />
+              </form>
             </div>
           </div>
           <img id="screen" src="img/screen.png" />
         </div>
       </div>
     </section>
+
+    <script>
+      window.addEventListener("load", function() {
+  const form = document.querySelector('form');
+  const button = document.querySelector('input[type="submit"]');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    button.value = 'Enviando..'
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      button.value = 'Enviado!'
+    })
+  });
+});
+    </script>
   </body>
 </html>
