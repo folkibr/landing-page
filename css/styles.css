@@ -226,6 +226,10 @@ input[type="submit"] {
     margin-bottom: 8px;
   }
 
+  .form {
+    align-items: center;
+  }
+
   form {
     flex-direction: column;
   }
