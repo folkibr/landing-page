@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head> 
-    <title>Folki - A Sua Organização na USP</title>
+    <title>Folki - A Sua Organização na Universidade</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
       content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no"
     />
 
-    <meta itemprop="name" content="Folki - A Sua Organização na USP" />
+    <meta itemprop="name" content="Folki - A Sua Organização na Universidade" />
     <meta
       name="description"
       content="O Folki é o aplicativo para organizar suas atividades, faltas, aulas e notas. Tudo em um só lugar."
@@ -33,7 +33,7 @@
 
     <meta
       property="og:title"
-      content="Folki - A Sua Organização na USP"
+      content="Folki - A Sua Organização na Universidade"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://folki.com.br/" />
@@ -47,7 +47,7 @@
     <meta property="twitter:image" content="img/ogtt.png" />
     <meta
       property="twitter:title"
-      content="Folki - A Sua Organização na USP"
+      content="Folki - A Sua Organização na Universidade"
     />
     <meta
       property="twitter:description"
@@ -79,9 +79,9 @@
         <div class="container">
           <div class="texts-container">
             <img src="img/prints.png" class="prints-mobile" />
-            <h1>O Lugar para se Organizar na USP</h1>
+            <h1>O Lugar para se Organizar na Universidade</h1>
             <h2>
-              Organize suas atividades, faltas, aulas e notas. Tudo em um só lugar.
+              Organize suas atividades, faltas, aulas e notas. Tudo em um só lugar. Disponível para USP e UFSCar!
             </h2>
             <div class="form">
               <a href="https://play.google.com/store/apps/details?id=com.folki" target="_blank">
@@ -90,40 +90,11 @@
               <a href="https://folki.com.br/web" target="_blank">
                 <img src="img/apple.png" />
               </a>
-              <!--
-              <p>Faça sua pré-inscrição para receber um convite antecipado</p>
-              <form action="https://script.google.com/macros/s/AKfycbywUcS7ZMSf8283k1ew4PomNnJVDEHyAzEfybUmJGgC2IRm4V5mLvaNuhJdu-TwxUx4-A/exec" method="POST">
-                <input type="email" name="Email" placeholder="Seu email @usp.br" />
-                <input type="submit" value="Enviar" />
-              </form>
-              -->
             </div>
           </div>
           <img id="screen" src="img/screen.png" />
         </div>
       </div>
     </section>
-
-    <script>
-      window.addEventListener("load", function() {
-  const form = document.querySelector('form');
-  const button = document.querySelector('input[type="submit"]');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    if(data.get('Email').indexOf('usp.br') === -1) return alert('Insira seu email USP!')
-    button.disabled = true
-    button.value = 'Enviando..'
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      button.value = 'Enviado!'
-    })
-  });
-});
-    </script>
   </body>
 </html>
