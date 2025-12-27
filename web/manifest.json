@@ -1,0 +1,20 @@
+{
+  "name": "Folki",
+  "short_name": "Folki",
+  "description": "Folki - Sua vida acadêmica organizada",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#7500BC",
+  "theme_color": "#7500BC",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
