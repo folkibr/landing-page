@@ -1,0 +1,2 @@
+/web/* https://web.folki.com.br/:splat 301
+/web https://web.folki.com.br 301
